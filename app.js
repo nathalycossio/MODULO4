@@ -15,5 +15,5 @@ app.get('/404', function(req,res){
 });
 
 app.get('/', function(req,res){
-    res.send('Error página no encontrada');   
+    res.send('Hola');   
 });
