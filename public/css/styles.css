@@ -1,0 +1,23 @@
+/*.container {
+    with:
+    hight:
+
+}*/
+
+body{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+
+    width: 100%;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.cuotas{
+    text-align: center;
+}
