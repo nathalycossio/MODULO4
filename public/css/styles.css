@@ -7,6 +7,7 @@
 body{
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 img {
@@ -14,10 +15,80 @@ img {
     width: 100%;
 }
 
-ul{
-    list-style-type:none;
+#logo-header{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 30%
 }
 
-.cuotas{
+/*----------------------------*/
+
+
+#text-header{
     text-align: center;
+}
+.burger-menu{
+    text-align: center;
+    padding: 10px;
+    background-color: #03264C;
+    
+}
+/******************main************************/
+
+
+.main-title{
+
+    font-size: 24px;
+    text-align: center;
+}
+.price-article{
+
+    font-size: 18px;
+}
+.discount-article{
+
+    font-size: 16px;
+}
+.description-article{
+
+    font-size: 16px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li a{
+    font-size: 12px;
+    margin-left: -35px;
+    text-decoration: none;
+    color: black
+}
+
+#input-header{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 250%
+
+}
+
+#search-button-header{
+    margin-left: 10px;
+    padding: 1px;
+}
+
+article{
+    text-align: center;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+#icon-footer{
+
+    font-size: 2em;
+    margin-bottom: 10px
 }
