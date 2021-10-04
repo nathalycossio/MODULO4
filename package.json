@@ -19,5 +19,8 @@
   "homepage": "https://github.com/nathalycossio/MODULO4#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.2"
   }
 }
