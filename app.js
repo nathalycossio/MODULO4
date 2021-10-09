@@ -16,6 +16,13 @@ app.get('/', function(req,res){
     res.sendFile(path.resolve(__dirname, './views/home.html'));  
 });
 
+
+app.get('/register', function(req,res){
+    res.sendFile(path.resolve(__dirname, './views/register.html'));  
+});
+
+app.post
+
 /*app.get('/', function(req,res){
     res.send('Hola');   
 });*/

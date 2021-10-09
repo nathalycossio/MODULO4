@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>formulario</title>
+    
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Questrial&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+<h1>The input element</h1>
+
+<form action="/action_page.php" method="POST">
+  <label for="fname">Nombre y Apellido:</label>
+  <input type="text" id="fname" name="fname" value="Escribi tu nombre"><br><br>
+
+  <label for="lname">Nombre de usuario:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="nacimiento">Fecha de nacimiento:</label>
+  <input type="date" id="nacimiento" name="nacimiento"><br><br>
+
+  <label for="domicilio">Domicilio:</label>
+  <input type="text" id="domicilio" name="domicilio"><br><br>
+
+
+  <label for="perfil">Perfil de usuario:</label><br>
+  
+<div>
+   
+    <input type="radio" id="huey" name="drone" value="comprador"
+            checked>
+    <label for="huey">comprador</label>
+</div>
+    
+<div>
+    <input type="radio" id="dewey" name="drone" value="vendedor">
+    <label for="dewey">Dewey</label>
+</div>
+  
+  
+<div>
+  <input type="submit" value="Submit">
+  <button type="submit" value="submit">Submit</button>
+</div>
+</form>
+
+
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+</body>
+</html>
