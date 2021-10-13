@@ -11,8 +11,9 @@
     font-size: 16px;
 }
 
+
 body{
-    background-color: #EAC926;
+    background-color: hsl(40, 11%, 95%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,10 +23,15 @@ img {
 
 /*------------HEADER----------------*/
 
+.main-header{
+    background-color: #EAC926;
+    padding: 5px;
+}
+
 #logo-header{
     margin-top: 25px;
     margin-left: 25px;
-    width: 30%
+    width: 120px
 }
 
 #search-button-header{
@@ -35,10 +41,19 @@ img {
 
 #text-header{
     text-align: center;
+    font-weight: 400px;
+    padding-top: 20px
 }
 
-.links{
+.main-header-bottom-bar{
     display: none;
+}
+
+
+.main-header-logo-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .burger-menu{
@@ -47,12 +62,17 @@ img {
     padding: 10px;
     background-color: #1259c3;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 7px;
     
 }
 .burger-menu-cont{
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0px;
+}
+
+.main-navbar{
+    display: none;
+
 }
 
 ul{
@@ -61,16 +81,18 @@ ul{
 }
 
 ul li a{
-    font-size: 12px;
+    font-size: 17px;
     /*margin-left: -35px;*/
     text-decoration: none;
-    color: black
+    color: black;
+    display: inline-block;
+    padding: 5px 0px;
 }
 
 #input-header{
     margin-top: 15px;
     margin-left: 10px;
-    width: 250px
+    width: 100px
 }
 
 
@@ -80,7 +102,8 @@ main {
 
     text-align: center;
     width: 90%;
-    margin: auto;
+    margin: auto; /*me centra todo el mail*/
+    padding-top: 10px;
 }
 
 article{
@@ -94,40 +117,63 @@ article{
 .main-title{
     font-size: 24px;
     text-align: center;
+    color: #60645c;
+    margin: 10px;
 }
-.caja1{
 
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
    
-}
-
 .caja2{
 
     border-top:solid 1px #ebebeb;
     padding: 15px;
     background-color: #ffffff;
+    position: relative;
 }
 .camion{
     
     color: #39b54a;
     border-radius: solid black 50% 25% 25% 25%;
 }
+.precio-descuento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .price-article{
-
     font-size: 18px;
 }
-.discount-article{
 
+.discount-article{
     font-size: 16px;
     color: #39b54a;
 }
-.description-article{
 
+.description-article{
     font-size: 16px;
     display: none;
 }
 
+.container-article{
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 
 
 /******************FOOTER************************/
@@ -144,27 +190,115 @@ footer{
     margin-bottom: 10px
 }
 
+.lineaFooter {
+    background-color: #ebebeb;
+    padding: 1px 0px;
+    margin: 20px 0px;
+    width: 100%;
+}
+
 /******************MEDIA************************/
 
-@media (min-width: 361px){
-    .burger-menu{
-        display: none;
-    }
-
-    .links{
-        display: block;
-    }
-
-    .description-article{
-    display: block;
-    }
+@media (min-width: 360px){
+    
 
     article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
+    .burger-menu{
+        display: none;
+    }
+    
+    .main-header-top-bar{ 
+
+        border: dotted 2px red;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
 
+    .main-navbar{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .left-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+     /*.container-article{
+
+        display: flex;
+        flex-grow: initial;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }*/
+        
+    article {
+        max-width: 45%;
+    }
+    
+    
+}
+
+@media (min-width: 1024px){
+    .burger-menu{
+        display: none;
+    }
+
+    .main-header-top-bar{ 
+
+        border: dotted 2px red;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .main-navbar{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .left-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*.container-article{
+
+        display: flex;
+        flex-grow: initial;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }*/
+        
+    article {
+        max-width: 22.5%;
+
+    }
+    .first-footer{
+
+        display: flex;
+    }
+    
 }

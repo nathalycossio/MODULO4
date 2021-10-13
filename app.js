@@ -9,7 +9,7 @@ app.use(express.static(publicPath));
 
 
 app.listen(process.env.PORT||3000, () => {
-    console.log('servidor corriendo');
+    console.log('Servidor corriendo ❤️  PORT:3000');
 });
 
 app.get('/', function(req,res){
