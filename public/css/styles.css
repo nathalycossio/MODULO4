@@ -25,7 +25,7 @@ img {
 
 header{
     background-color: #EAC926;
-    padding: 20px;
+    /*padding: 20px;*/
    
 }
 
@@ -33,14 +33,32 @@ header{
     background-color: #EAC926;
     /*padding: 5px;*/
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo-header{
+.logo{
     margin: 10px;
-    width: 150px
+    width: 50%
 }
+
+.barraDeBusqueda{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.busqueda{
+    width: 90%;
+}
+#BarraDeBusqueda{
+    display: flex;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+    }
 
 #search-button-header{
     margin-left: 10px;
@@ -57,14 +75,6 @@ header{
     display: none;
 }
 
-
-.main-header-logo-search{
-    display: flex;
-   
-
-    /*border: dotted 2px red;*/
-    
-}
 
 .burger-menu{
     /*text-align: center;*/
@@ -211,17 +221,32 @@ footer{
 
 @media (min-width: 360px){
     
+    .main-header{
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+            
+    }
+
+    .logo{
+        width: 30%;
+        padding: 0px;
+    }
+    #barraDeBusqueda{
+        width: 80%;
+        justify-content: space-around;
+    }
+    
+    .compraEnCuotas {
+       
+        padding: 0px;
+    }
 
     article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
     
-
-    #logo-header{
-        flex-grow: 45%;
-    }
-
     form {
         display: flex;
         flex-grow: 45%;
@@ -235,12 +260,7 @@ footer{
         display: none;
     }
     
-    /*.main-header{
-        display: flex;
-
-        flex-direction: row;
-        justify-content: space-around;     
-    }*/
+   
 
     .main-navbar{
         display: block;

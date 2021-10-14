@@ -19,23 +19,24 @@
       
     <header>
         <div class="main-header">
-                <div class="main-header-logo-search">
+                <div class="logo">
+                    <a href='/'><img  src="images/logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
+                </div>  
 
-                    <a href='/'><img id="logo-header" src="images/logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
-                    
-                    <form action="/action_page.php" method="POST">
-                    <input id="input-header" type="search" placeholder="Buscar productos, marcas" >
-                    <button id="search-button-header" type="submit"><i class="fas fa-search"></i></button>
+                <div class="barraDeBusqueda">
+                    <form action="get" method="GET" id="barraDeBusqueda">
+                        <label for="barraDeBusqueda"></label>
+                        <input class="busqueda" type="text" name="barraDeBusqueda" placeholder="Buscar productos, marcas">
+                        <button><i class="fas fa-search"></i></button>
                     </form>
-
                 </div>
-                            
-                <div>     
+                
+                     
+                <div class="compraEnCuotas">     
                         <p id="text-header">
                             <i class="fas fa-hand-holding-usd"></i>
                             compra en cuotas y sin tarjeta de credito
                         </p>
-
                 </div>
         </div>
 
