@@ -25,7 +25,7 @@ img {
 
 header{
     background-color: #EAC926;
-    padding: 5px;
+    padding: 20px;
    
 }
 
@@ -34,7 +34,7 @@ header{
     /*padding: 5px;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 #logo-header{
@@ -60,13 +60,9 @@ header{
 
 .main-header-logo-search{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 
     /*border: dotted 2px red;*/
-    
-    flex-direction: row;
-    flex-wrap: wrap;
     
 }
 
@@ -91,7 +87,8 @@ header{
 
 ul{
     list-style:none;
-    padding: 0
+    padding: 0;
+    margin: 0;
 }
 
 ul li a{
@@ -225,7 +222,8 @@ footer{
         flex-grow: 45%;
     }
 
-    #input-search{
+    form {
+        display: flex;
         flex-grow: 45%;
         margin: 10px;
     }
@@ -237,26 +235,34 @@ footer{
         display: none;
     }
     
-    
+    /*.main-header{
+        display: flex;
 
+        flex-direction: row;
+        justify-content: space-around;     
+    }*/
 
     .main-navbar{
         display: block;
         display: flex;
-        flex-wrap: wrap;
+     
         justify-content: space-between;
+    }
+
+    .main-navbar li{
+      margin: 0px 8px;
     }
 
     .left-navbar{
         display: flex;
-        justify-content: space-between;
-        width: 45%;
+        /*justify-content: space-around;*/
+        /*width: 45%;*/
     }
 
     .right-navbar{
         display: flex;
-        justify-content: space-between;
-        width: 45%;
+        /*justify-content: space-between;*/
+        /*width: 45%;*/
     }
 
      /*.container-article{
@@ -271,52 +277,14 @@ footer{
         max-width: 45%;
     }
     
-    .main-header{
-        
-        flex-direction: row;
-    }
+    
+
+
 }
 
 @media (min-width: 1024px){
-    .burger-menu{
-        display: none;
-    }
-
    
-    .main-navbar{
-        display: block;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .left-navbar{
-        display: flex;
-        justify-content: space-between;
-        width: 35%;
-    }
-
-    .right-navbar{
-        display: flex;
-        justify-content: space-between;
-        width: 35%;
-    }
-
-    /*.container-article{
-
-        display: flex;
-        flex-grow: initial;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }*/
-        
     article {
         max-width: 22.5%;
-
     }
-    .first-footer{
-
-        display: flex;
-    }
-    
 }
